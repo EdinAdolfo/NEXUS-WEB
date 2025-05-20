@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -32,12 +31,31 @@
             padding: 20px;
         }
         h2 {
+            background-color: #e0e0e0;
+            padding: 10px;
+            border-radius: 8px;
             color: #222;
         }
-        .juegos img {
+        .juegos {
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+        }
+        .juego {
+            text-align: center;
+        }
+        .juego img {
             width: 300px;
-            margin: 10px;
             border: 4px solid #ccc;
+            border-radius: 10px;
+        }
+        .descripcion {
+            margin-top: 10px;
+            font-size: 15px;
+            color: #444;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
         }
         footer {
             background-color: #222;
@@ -78,10 +96,26 @@
 
 <section id="juegos" class="juegos">
     <h2>Videojuegos de Nexus</h2>
-    <img src="29b775c4-b6ff-4301-8edf-962242ea840d.jpg" alt="Tecún Umán">
-    <img src="c3573ffc-c0e3-4285-9c57-db8dea0d8916.jpg" alt="La Ruta Quetzal">
-    <img src="ea33512d-716b-4fe6-a75b-a2ccb2d9719f.jpg" alt="Constructor de Tikal">
-    <img src="ece14c0f-2392-45e4-b548-884b99a2572c.jpg" alt="Seguí ese Barrilete Vos">
+
+    <div class="juego">
+        <img src="29b775c4-b6ff-4301-8edf-962242ea840d.jpg" alt="Tecún Umán">
+        <div class="descripcion">juega como Tecún Umán en un juego de acción en tercera persona donde defiendes tu territorio.</div>
+    </div>
+
+    <div class="juego">
+        <img src="c3573ffc-c0e3-4285-9c57-db8dea0d8916.jpg" alt="La Ruta Quetzal">
+        <div class="descripcion">Controlas un quetzal que recorre Guatemala desde peten hasta jutiapa Visitas volcanes, lagos, mercados y ruinas, evitando peligros naturales y humanos.</div>
+    </div>
+
+    <div class="juego">
+        <img src="ea33512d-716b-4fe6-a75b-a2ccb2d9719f.jpg" alt="Constructor de Tikal">
+        <div class="descripcion">Eres el nuevo gobernante de Tikal y debes construir, expandir y proteger tu civilización en medio de conflictos y decisiones estratégicas.</div>
+    </div>
+
+    <div class="juego">
+        <img src="ece14c0f-2392-45e4-b548-884b99a2572c.jpg" alt="Seguí ese Barrilete Vos">
+        <div class="descripcion">Un niño guatemalteco corre por los barrios para recuperar su barrilete perdido, enfrentando obstáculos.</div>
+    </div>
 </section>
 
 <footer>
